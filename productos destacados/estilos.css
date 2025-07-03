@@ -1,0 +1,210 @@
+
+    :root {
+      --azul-oscuro: #003a6d;
+      --azul-claro: #2f80ed;
+      --verde-claro: #b7f48e;
+      --verde-btn: #a4dc74;
+      --amarillo-fondo: #fffccf;
+      --gris-claro: #f0f0f0;
+      --negro: #000000;
+      --blanco: #ffffff;
+      --gris-texto: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fffffd;
+      color: var(--negro);
+      line-height: 1.6;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header, footer {
+     background: linear-gradient(70deg, rgb(32, 0, 173), rgb(197, 204, 224));
+      padding: 1rem 2rem;
+    }
+   .categories-select{
+            flex: 1;
+            margin: 0 50px;
+            padding: 5px;
+            border: 2.5px solid var(--azul-claro);
+            border-radius: 10px;
+            background-color: rgb(215, 210, 255);
+   }
+   .sesion{
+     flex: 1;
+            margin: 0 15px;
+            padding: 5px;
+            border: 1px solid var(--azul-claro);
+            border-radius: 10px;
+            background-color: rgb(220, 214, 248);
+   }
+   .compra{
+            flex: 1;
+            margin: 0 10px;
+            padding: 5px;
+            border: 1.5px solid var(--azul-claro);
+            border-radius: 10px;
+            background-color: rgb(223, 221, 250);
+   }
+    input[type='search']{
+            flex: 1;
+            margin: 0 50px;
+            padding: 5px;
+            border: 2.5px solid var(--azul-claro);
+            border-radius: 10px;
+            background-color: rgb(211, 210, 255);
+        }
+
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+   
+    
+    .logo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .sidebar {
+      background-color: var(--gris-claro);
+      padding: 1rem;
+      width: 250px;
+    }
+
+    .sidebar h3 {
+      margin: 1rem 0;
+      color: var(--azul-oscuro);
+      font-family: monospace, lucida;
+    }
+
+    .sidebar .filters {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+      
+    }
+    
+
+    .promo-banner {
+     background: linear-gradient(rgb(8, 8, 248), rgb(255, 255, 255));
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 0.2rem;
+      font-size: 2.7rem;
+      color: var(--blanco);
+       animation-duration: 3s;
+  animation-name: slidein;
+    }
+    @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;}
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    
+
+    img {
+      height: 140px;
+      width: 550px;
+      border-radius:10px;
+    }
+    
+    .category-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .category-buttons button {
+     background: linear-gradient(70deg, rgb(0, 255, 55), rgb(209, 255, 209));
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .filtros {
+     background: linear-gradient(70deg, rgb(0, 255, 55), rgb(209, 255, 209));
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product {
+      background: var(--gris-claro);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 120px;
+      background: var(--blanco);
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .pagination {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .pagination span {
+      margin: 0 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .layout {
+      display: flex;
+    }
+
+  h4 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
